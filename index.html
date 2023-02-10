@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Caroudel Components</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto Slab";
+        color: black;
+      }
+      .caroudel {
+        color: aliceblue;
+        width: 700px;
+        margin: 100px auto;
+        padding: 32px;
+        background-color: green;
+        border-radius: 10px;
+        padding-left: 70px;
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 80px;
+      }
+      img {
+        height: 200px;
+        border-radius: 10px;
+        transform: scale(1.5);
+        box-shadow: 10px 5px 10px black;
+      }
+
+      .testmonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+      .testmonial-author {
+        font-size: 20px;
+        margin-bottom: 4px;
+        color: #66d9e8;
+      }
+      .testmonial-job {
+        font-size: 12px;
+        color: #99e9f2;
+      }
+      .button {
+        background-color: white;
+        /* display: none; */
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        position: absolute;
+        box-shadow: 0 0 24px rgb(85, 83, 83);
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: gray;
+      }
+      .button--left {
+        left: -21px;
+        top: 45%;
+        /* transform: translate(-50%, -50%); */
+      }
+      .button--right {
+        right: -21px;
+        top: 45%;
+        /* transform: translate(50%, -50%); */
+      }
+      .button-icon {
+        height: 30px;
+        width: 30px;
+        stroke: green;
+      }
+
+      .dots {
+        transform: translate(50%, -430%);
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 20px;
+        background-color: white;
+        border: 2px solid green;
+        box-shadow: 0 0 5px gray;
+      }
+      .first {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caroudel">
+      <img src="akshay1.jpeg" alt="Akshay Singh" />
+      <blockquote class="testmonial">
+        <p class="testmonial-text">
+          "My name is Rajan Kumar from hajipur vaishali.I'm studing in BCA from
+          R.N Collage Hajipur.I am intrested in coding and developement."
+        </p>
+        <p class="testmonial-author">Rajan Kumar</p>
+        <p class="testmonial-job">R.N Collage Hajipur.</p>
+      </blockquote>
+      <button class="button button--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="button-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <button class="button button--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="button-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="dots">
+      <button class="dot first">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+    </div>
+  </body>
+</html>
